@@ -839,6 +839,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1787608726}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!20 &2011107294 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 6038414195724772108, guid: 47b3753aad2304c93bb4781b9c7f7e82, type: 3}
+  m_PrefabInstance: {fileID: 6038414196141510271}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2053419525
 GameObject:
   m_ObjectHideFlags: 0
@@ -966,6 +971,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
+  gravity: -9.8
+  jumpheight: 3
+--- !u!114 &2083175360
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2083175353}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f27b599c45674edbbb187ac8eeb4460, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cam: {fileID: 2011107294}
+  xSensitivity: 50
+  ySensitivity: 50
 --- !u!1 &2111062321
 GameObject:
   m_ObjectHideFlags: 0
