@@ -26,7 +26,7 @@ public class Playermotor : MonoBehaviour
          movedirecton.z = input.y;
          _controller.Move(transform.TransformDirection(movedirecton) * speed * Time.deltaTime);
          _playervelocity.y += gravity * Time.deltaTime;
-         if (isground&& _playervelocity.y<0)
+         if (isground && _playervelocity.y<0)
          {
              _playervelocity.y = -2f;
          }
