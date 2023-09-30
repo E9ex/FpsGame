@@ -18,6 +18,6 @@ public class KeyPad : interactable
 
     protected override void interact()
     {
-        Debug.Log("interacted with " + gameObject.name);
+       Debug.Log("interacted with "+gameObject.name);
     }
 }

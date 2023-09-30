@@ -9,10 +9,13 @@ public class PlayerInteract : MonoBehaviour
     [SerializeField]private float distance = 3f;
     [SerializeField]private LayerMask _mask;
     private PlayerUI playerUI;
+    private InputManager InputManager;
+    
     private void Start()
     {
         _camera = GetComponent<PlayerLook>().cam;
         playerUI = GetComponent<PlayerUI>();
+        InputManager = GetComponent<InputManager>();
     }
 
     private void Update()
@@ -25,7 +28,12 @@ public class PlayerInteract : MonoBehaviour
         {
             if (hitinfo.collider.GetComponent<interactable>()!=null)
             {
-                playerUI.updatetext(hitinfo.collider.GetComponent<interactable>().promptmessage);
+                interactable interactable = hitinfo.collider.GetComponent<interactable>();
+                playerUI.updatetext(interactable.promptmessage);
+                if (InputManager._onFoot.interact.triggered)
+                {
+                    interactable.baseinteract();
+                }
             }
         }
 
