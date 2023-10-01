@@ -30,7 +30,7 @@ public class PlayerInteract : MonoBehaviour
             {
                 interactable interactable = hitinfo.collider.GetComponent<interactable>();
                 playerUI.updatetext(interactable.promptmessage);
-                if (InputManager._onFoot.interact.triggered)
+                if (InputManager._onFoot.interact.triggered)//door animation working.
                 {
                     interactable.baseinteract();
                 }

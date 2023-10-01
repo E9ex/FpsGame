@@ -1161,6 +1161,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fefb1d0136510478797d4794fa420c7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  useEvents: 0
   promptmessage: use keypad
   door: {fileID: 1715287708}
 --- !u!1 &1155103098
