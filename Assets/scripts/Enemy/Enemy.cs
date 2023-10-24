@@ -17,7 +17,15 @@ public class Enemy : MonoBehaviour
     private GameObject player;
     public float sightDistance = 20f;
     public float fieldOfView = 85f;
+    public Transform gunbarrel;
     public float Eyeheight;
+    [Range(.1f,10f)]
+    public float firerate;
+    public GameObject Player
+    {
+        get => player;
+    }
+    
 
     void Start()
     {
